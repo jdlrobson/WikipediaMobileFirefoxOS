@@ -66,15 +66,17 @@ header {
 	-webkit-transform: translate3d(0, 0, 0);
 }
 
+.goodscroll .scroller {
+	overflow-y: auto;
+}
+
 /* fix for cleaner scrolling on non-android see commit f130a3e3c823309d3e5d8cc57d202e67f3631fce */
 .iOS .scroller {
 	-webkit-overflow-scrolling: touch;
-	overflow-y: auto;
 }
 
 .android-4 .scroller {
 	-webkit-overflow-scrolling: touch;
-	overflow-y: auto;
 }
 
 .scroller > * {
@@ -91,10 +93,6 @@ header {
 .android .scroller {
 	/* No bottom toolbar */
 	bottom: 0px;
-}
-
-.winphone .scroller {
-	overflow-y: auto;
 }
 
 #map {
