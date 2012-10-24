@@ -151,7 +151,7 @@ window.app = function() {
 	}
 
 	function baseUrlForLanguage(lang) {
-		return '/proxy.php?url=' + window.PROTOCOL + '://' + lang + '.' + PROJECTNAME + '.org';
+		return 'proxy.php?url=' + window.PROTOCOL + '://' + lang + '.' + PROJECTNAME + '.org';
 	}
 
 	function makeCanonicalUrl(lang, title) {
