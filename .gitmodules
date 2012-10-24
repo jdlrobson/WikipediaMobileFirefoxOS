@@ -1,0 +1,3 @@
+[submodule "js/lib/MobileFrontend"]
+	path = js/lib/MobileFrontend
+	url = https://gerrit.wikimedia.org/r/p/mediawiki/extensions/MobileFrontend.git
