@@ -4,9 +4,9 @@
   "description": "Wikipedia Mobile for Firefox OS",
   "launch_path": "/",
   "icons": {
-    "16": "/img/icons/mortar-16.png",
-    "48": "/img/icons/mortar-48.png",
-    "128": "/img/icons/mortar-128.png"
+    "16": "/image/W_launchicon_16_1101.png",
+    "48": "/image/W_launchicon_48_1101.png",
+    "128": "/image/W_launchicon_128_1101.png"
   },
   "developer": {
     "name": "Wikimedia Foundation",
