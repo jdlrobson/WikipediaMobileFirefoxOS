@@ -116,7 +116,7 @@ window.search = function() {
 			var searchParam = results[0];
 			var searchResults = results[1].map(function(title) {
 				return {
-					key: app.urlForTitle(title),
+					key: app.urlForTitle( title, null, true ),
 					title: title
 				};
 			});

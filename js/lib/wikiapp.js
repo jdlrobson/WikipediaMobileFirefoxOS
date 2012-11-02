@@ -143,15 +143,16 @@ window.app = function() {
 		return d;
 	}
 
-	function urlForTitle(title, lang) {
+	function urlForTitle( title, lang, noProxy ) {
 		if(typeof lang === 'undefined') {
 			lang = preferencesDB.get("language");
 		}
-		return app.baseUrlForLanguage(lang) + "/wiki/" + encodeURIComponent(title.replace(/ /g, '_'));
+		return app.baseUrlForLanguage( lang, noProxy ) + "/wiki/" + encodeURIComponent(title.replace(/ /g, '_'));
 	}
 
-	function baseUrlForLanguage(lang) {
-		return 'proxy.php?url=' + window.PROTOCOL + '://' + lang + '.' + PROJECTNAME + '.org';
+	function baseUrlForLanguage( lang, noProxy ) {
+		var url = window.PROTOCOL + '://' + lang + '.' + PROJECTNAME + '.org';
+		return noProxy ? url : 'proxy.php?url=' + url;
 	}
 
 	function makeCanonicalUrl(lang, title) {
