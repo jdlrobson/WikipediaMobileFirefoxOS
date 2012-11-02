@@ -2,6 +2,9 @@ mw.mobileFrontend = MobileFrontend = (function() {
 	return {
 		init: function() {
 		},
+		history: {
+			replaceHash: function() {}
+		},
 		registerModule: function(a, b) {
 			this[a] = b;
 		},
