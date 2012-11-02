@@ -9,4 +9,4 @@ New and updated messages should be contributed at [translatewiki.net/wiki/Transl
 
 [Translating-WikipediaMobile]: https://translatewiki.net/wiki/Translating:WikipediaMobile
 
-Current status of application submission to marketplace: https://github.com/preillyme/WikipediaMobileFirefoxOS/wiki/Submission-Update:-WikipediaMobile
+Current status of App submission to the Mozilla Marketplace: https://github.com/preillyme/WikipediaMobileFirefoxOS/wiki/Submission-Update:-WikipediaMobile
