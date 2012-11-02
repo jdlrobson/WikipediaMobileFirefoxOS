@@ -25,8 +25,14 @@ require(['https://marketplace.cdn.mozilla.net/mozmarket.js'],
 // When you write javascript in separate files, list them as
 // dependencies along with jquery
 define("app", function(require) {
-require(['jquery','lawnchair/Lawnchair','hogan.min','noclickdelay','mediawiki','2.5.3-crypto-md5','urlcache','jquery.localize','iscroll-lite','leaflet/leaflet','propertiesFileReader','preferences','l10n-setup','page','templates','savedpages','chrome','wikiapp','app_history','search','geo','settings','langlinks','menu','mobilefrontend','MobileFrontend/javascripts/toggle','MobileFrontend/javascripts/references','localFile','platform-stub','main'], function ($) {
-		require(['lawnchair/adapters/webkit-sqlite','lawnchair/adapters/memory'], function() {
+require( [ 'jquery', 'lawnchair/Lawnchair', 'hogan.min', 'noclickdelay',
+	'mediawiki', '2.5.3-crypto-md5', 'urlcache', 'jquery.localize', 'iscroll-lite',
+	'leaflet/leaflet', 'propertiesFileReader', 'preferences', 'l10n-setup', 'page',
+	'templates', 'savedpages', 'chrome', 'wikiapp', 'app_history', 'search', 'geo',
+	'settings', 'langlinks', 'mobilefrontend', 'localFile', 'platform-stub', 'main' ], function ($) {
+		require( [ 'lawnchair/adapters/webkit-sqlite','lawnchair/adapters/memory',
+			'menu',
+			'MobileFrontend/javascripts/toggle','MobileFrontend/javascripts/references' ], function() {
 			init();
 			chrome.initialize();
 			});
